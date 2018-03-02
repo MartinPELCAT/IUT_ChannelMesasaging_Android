@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -66,23 +67,44 @@ public class ChannelActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     @Override
-    public void onDownloadComplete(String downloadedContent) {
-        System.out.println(downloadedContent);
-        Gson gson = new Gson();
-        MessageResponse obj = gson.fromJson(downloadedContent, MessageResponse.class);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
-
-        for (Message msg:obj.getMessages()
-                ) {
-            arrayAdapter.add(msg.getMessage());
-
+    public void onDownloadComplete(String downloadContent) {
+        if(downloadContent.length()>100){
+            Gson gson = new Gson();
+            MessageResponse obj = gson.fromJson(downloadContent, MessageResponse.class);
+            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
+            for (Message msg:obj.getMessages()){
+                arrayAdapter.add(msg.getMessage());
+            }
+            listeVue.setAdapter(arrayAdapter);
+            arrayAdapter.notifyDataSetChanged();
+            Toast.makeText(getApplicationContext(),"refreshed",Toast.LENGTH_SHORT).show();
         }
-        listeVue.setAdapter(arrayAdapter);
-        arrayAdapter.notifyDataSetChanged();
+        else{
+            messagesRequest();
+        }
+
     }
 
     @Override
     public void onDownloadError(String error) {
 
+    }
+
+    public void messagesRequest(){
+        Intent intent = getIntent();
+        Bundle bd = intent.getExtras();
+        if(bd != null)
+        {
+            String id = (String) bd.get("channelId");
+            sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
+            listeVue = (ListView) findViewById(R.id.listView2);
+            HttpPostHandler http = new HttpPostHandler();
+            HashMap<String,String> hashMap=new HashMap<>();
+            hashMap.put("accesstoken",sharedPreferences.getString("accessToken",null));
+            hashMap.put("channelid",String.valueOf(id));
+            http.addOnDownloadListener(this);
+            http.execute(new PostRequest("http://www.raphaelbischof.fr/messaging/?function=getmessages",hashMap));
+            //Toast.makeText(getApplicationContext(),sharedPreferences.getString("accessToken",null),Toast.LENGTH_SHORT).show();
+        }
     }
 }
