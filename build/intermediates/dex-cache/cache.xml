@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_f90c26846ba1bb818499b94d6616157038caebd0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Android_sdk\temp\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.1\2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0\gson-2.8.1.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.1_43abaca6f38a06822cb6640f6a914a6a5bc77f9a\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_2db9b5a6d65f457866ce8fcbd717667fd3b7ba27\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_8b5f6ef46d02f475a9d257e539d580599b1afc0d\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_452d91c5e316950a6223c507f9f597d037bc7845\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="36ac5790c34db0b17de6d170f80c96dfd3ae0b54">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5c724bde22142f44de05c2eaa3683892f186c267\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_f5c30f3311dc685637700614716070d654bfeac0\classes.dex" />
+    </item>
+    <item
+        jar="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="49484ff1f07e034e90cb8b5555dbe44746ef41b2">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_14c98cf582d66cc1f5acd81844face851a1d9edd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Android_sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="P:\INFO2\S4\Android\TP2\ChannelMessaging\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7d498ec213ae5134ba53043c6f91f9ec857104e2\classes.dex" />
+    </item>
+
+</items>
