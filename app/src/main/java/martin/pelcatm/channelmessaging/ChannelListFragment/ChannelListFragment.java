@@ -36,8 +36,8 @@ public class ChannelListFragment extends AppCompatActivity implements View.OnCli
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.channel_fragment);
-        liste = (ListView) findViewById(R.id.listView);
+        setContentView(R.layout.channel_list_fragment);
+        liste = (ListView) findViewById(R.id.listViewFragmentList);
         sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
         HttpPostHandler http = new HttpPostHandler();
         http.addOnDownloadListener(this);
